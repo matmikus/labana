@@ -81,14 +81,34 @@ div#second-content {
 div#third-content {
     max-width: 800px;
     background-color: #ffffff;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #032a4c;
+}
+div#third-content > :first-child {
+    font-weight: bold;
+    color: #000000;
 }
 div#fourth-content {
     max-width: 1000px;
     background-color: #ffffff;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #032a4c;
+}
+div#fourth-content > :first-child {
+    font-weight: bold;
+    color: #000000;
 }
 div#fifth-content {
     max-width: 800px;
     background-color: #ffffff;
+    color: #032a4c;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 div#footer {
     width: 100%;
@@ -142,7 +162,7 @@ a.active {
     width:100%;
     height: 12rem;
 }
-.footer-icone {
+.footer-icon {
     font-size: 150%;
     position: relative;
     top: 2px;
@@ -151,4 +171,60 @@ a.active {
 .footer-data {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+ul.badania {
+    list-style-type: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    margin-bottom: 0;
+    padding: 0 15%;
+}
+ul.wyniki {
+    list-style-type: none;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+ul.wyniki > li {
+    margin-bottom: 2rem;
+}
+ul.wyniki > li > i {
+    font-size: 150%;
+    position: relative;
+    top: .2rem;
+    margin-right: .5rem;
+}
+form.generator-zgody {
+    background-color: #d9edf7;
+    border-radius: 10px;
+    border: 1px solid gray;
+    color: gray;
+    padding: .5rem 2rem;
+    margin-bottom: 1rem;
+}
+label {
+    margin-bottom: 0;
+    font-size: 80%;
+}
+.form-control {
+    background-color: #edf4f7;
+}
+.form-group {
+    margin-bottom: 0;
+}
+.wyniki-icon {
+    margin-right: .5rem;
+    color: red;
+}
+.generator-info {
+    font-size: 80%;
+}
+.generator-button {
+    color: gray;
+    padding: .5rem;
+    margin: .5rem;
+    cursor: pointer;
+    border: 1px solid silver;
 }
