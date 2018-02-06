@@ -1,0 +1,139 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/Ubuntu-R.ttf);
+}
+body {
+    position: relative;
+    background: url(../img/background-light.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-family: myFont;
+}
+div#top {
+    width: 100%;
+    background-color: white;
+    background: url(../img/stripe.jpg) repeat-x center bottom;
+    padding: 0;
+}
+div#navi {
+    height: 4rem;
+    margin: 0 auto;
+    z-index: 1;
+}
+div#navi>ul {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+div#navi>ul>li>a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+hr.hr-nav {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 0;
+    height: 0.2rem;
+    background-color: #5ab438;
+}
+div.content-div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+div.nice-shape {
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.4), -2px 0px 4px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.4), -2px 0px 4px 0px rgba(0,0,0,0.4);
+    box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.4), -2px 0px 4px 0px rgba(0,0,0,0.4);
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: block;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+.under-sticky {
+    margin-top: 4rem;
+}
+.under-sticky2 {
+    margin-top: 4.5rem;
+}
+div#first-content {
+    max-width: 800px;
+}
+div#second-content {
+    width: 1000px;
+}
+div#third-content {
+    max-width: 800px;
+    background-color: #ffffff;
+}
+div#fourth-content {
+    max-width: 1000px;
+    background-color: #ffffff;
+}
+div#fifth-content {
+    max-width: 800px;
+    background-color: #ffffff;
+}
+div#footer {
+    width: 100%;
+    background-color: #00adef;
+    color: #ffffff;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+div.location-div {
+    background-color: #ffffff;
+    width: 100%;
+}
+div.location-div > :first-child {
+    background-color: #d9edf7;
+    text-align: center;
+    padding: 1rem;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+div.location-data {
+    font-size: 80%;
+    color: #337ab7;
+}
+div.location-data > :first-child, div.location-data > :nth-child(2) {
+    width: 49%;
+    text-align: center;
+    padding: 1.3rem 0;
+}
+div.location-data > :nth-child(3) {
+    text-align: center;
+    padding-bottom: 1.3rem;
+}
+.green-color {
+    color: #59b337;
+}
+.nav-link {
+    padding: 0;
+}
+a.active {
+    color: #00adef;
+}
+.google-map {
+    width:100%;
+    height: 12rem;
+}
