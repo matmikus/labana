@@ -51,6 +51,9 @@ div.nice-shape {
     -moz-box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.4), -2px 0px 4px 0px rgba(0,0,0,0.4);
     box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.4), -2px 0px 4px 0px rgba(0,0,0,0.4);
 }
+.carousel-item > img {
+    border-radius: 10px;
+}
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
@@ -196,7 +199,7 @@ ul.wyniki > li > i {
     top: .2rem;
     margin-right: .5rem;
 }
-form.generator-zgody {
+form#generator-zgody {
     background-color: #d9edf7;
     border-radius: 10px;
     border: 1px solid gray;
@@ -207,12 +210,14 @@ form.generator-zgody {
 label {
     margin-bottom: 0;
     font-size: 80%;
+    /* float: left; */
 }
 .form-control {
     background-color: #edf4f7;
+    margin-left: auto;
 }
-.form-group {
-    margin-bottom: 0;
+.form-inline {
+    margin-top: .5rem;
 }
 .wyniki-icon {
     margin-right: .5rem;
@@ -220,11 +225,16 @@ label {
 }
 .generator-info {
     font-size: 80%;
+    text-align: center;
 }
 .generator-button {
     color: gray;
     padding: .5rem;
     margin: .5rem;
+    margin-top: 1rem;
     cursor: pointer;
     border: 1px solid silver;
+}
+#generator-warning {
+    color: red;
 }

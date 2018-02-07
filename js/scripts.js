@@ -125,3 +125,23 @@ function myMap() {
     });
     infowindow3.open(map3,marker3);
 }
+
+// animate on scroll library
+
+AOS.init();
+
+// form validation
+
+$('#generator-zgody').submit(function() {
+    if ($.trim($("#nazwa").val()) === "" || $.trim($("#email").val()) === "" || $.trim($("#pesel").val()) === "" || $.trim($("#miejscowosc").val()) === "") {
+        var alert_text = "Nie podano następujących elementów: ";
+        if ($.trim($("#nazwa").val()) === "") alert_text += "imię i&nbsp;nazwisko, ";
+        if ($.trim($("#email").val()) === "") alert_text += "adres e-mail, ";
+        if ($.trim($("#pesel").val()) === "") alert_text += "PESEL, ";
+        if ($.trim($("#miejscowosc").val()) === "") alert_text += "miejscowość. ";
+        alert_text = alert_text.substring(0, alert_text.length - 2);
+        alert_text += ".";
+        $('#generator-warning').html(alert_text);
+        return false;
+    }
+});

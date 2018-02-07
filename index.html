@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="fonts/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/favicon.ico">
 </head>
@@ -90,7 +91,7 @@
         <div class="row" id="lokalizacje">
             <div id="second-content" class="row content-div d-flex under-sticky2">
                 <div class="col-12 col-md-4">
-                    <div class="nice-shape location-div">
+                    <div class="nice-shape location-div" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200">
                         <div>PUNKT POBRAŃ<br>Gdynia Karwiny</div>
                         <div id="googleMap1" class="google-map"></div>
                         <div class="location-data">
@@ -101,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="nice-shape location-div">
+                    <div class="nice-shape location-div" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200">
                         <div>LABORATORIUM<br>Gdańsk (Szpital Swissmed)</div>
                         <div id="googleMap2" class="google-map"></div>
                         <div class="location-data">
@@ -112,7 +113,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="nice-shape location-div">
+                    <div class="nice-shape location-div" data-aos="fade-up" data-aos-delay="900" data-aos-offset="200">
                         <div>LABORATORIUM<br>Rumia Janowo (Przychodnia)</div>
                         <div id="googleMap3" class="google-map"></div>
                         <div class="location-data">
@@ -124,7 +125,7 @@
             </div>
         </div>
         <div class="row" id="badania">
-            <div id="third-content" class="content-div nice-shape under-sticky2">
+            <div id="third-content" class="content-div nice-shape under-sticky2" data-aos="fade-left" data-aos-offset="300">
                 <p>BADANIA ANALITYCZNE</p>
                 <p>Wykonujemy pełen zakres badań analitycznych. Oprócz standardowych, jak morfologia i OB, wykonujemy również profilowane, m.in.:</p>
                 <p>
@@ -144,7 +145,7 @@
             </div>
         </div>
         <div class="row" id="laboratorium">
-            <div id="fourth-content" class="content-div nice-shape under-sticky2">
+            <div id="fourth-content" class="content-div nice-shape under-sticky2" data-aos="fade-right" data-aos-offset="300">
                 <p>LABORATORIUM</p>
                 <p>Pracujemy na potrzeby podstawowych i specjalistycznych zespołów opieki zdrowotnej, lekarzy praktykujących prywatnie, pacjentów indywidualnych.</p>
                 <p>Działając od 2004 roku, jako partner SWISSMED oferujemy w Szpitalu Centrum Zdrowia w Gdańsku bardzo szeroki zakres usług wysokospecjalistycznych m.in. w oparciu o własną Pracownię Serologii Transfuzjologicznej oraz Bank Krwi.</p>
@@ -153,41 +154,42 @@
             </div>
         </div>
         <div class="row" id="wyniki">
-            <div id="fifth-content" class="content-div nice-shape under-sticky2">
+            <div id="fifth-content" class="content-div nice-shape under-sticky2" data-aos="fade-left" data-aos-offset="300">
                 <p>Informujemy, że istnieje możliwość szybkiego otrzymania wyników badań. LABANA współpracuje z internetową Paltformą Publikacji Wyników. Dla Państwa bezpieczeństwa obsługę w tym zakresie prowadzi firma Marcel S.A., która gwarantuje najwyższą jakość usług i ochrony danych osobowych.</p>
                 <p>Po kliknięciu poniższych odnośników, zostaną Państwo przekierowani na odpowiednie strony operatora wyników on-line.</p>
                 <div class="row">
-                    <div class="d-inline-block align-top col-6">
+                    <div class="d-inline-block col-6">
                         <ul class="wyniki">
-                            <li><i class="fa fa-user"></i> &nbsp;<a href="https://kl035.elaborat.marcel.pl/">WYNIKI DLA PACJENTA</a></li>
+                            <li>&nbsp;<i class="fa fa-user"></i>&nbsp;<a href="https://kl035.elaborat.marcel.pl/">WYNIKI DLA PACJENTA</a></li>
                             <li><i class="fa fa-briefcase"></i> <a href="https://kont035.elaborat.marcel.pl/">WYNIKI DLA KONTRAHENTA</a></li>
                             <li><i class="fa fa-list-alt"></i> <a href="files/Regulamin.pdf">REGULAMIN SERWISU</a></li>
-                            <li><i class="fa fa-book"></i> <a href="files/Instrukcja.pdf">INSTRUKCJA UŻYTKOWNIKA</a></li>
+                            <li><i class="fa fa-book"></i> &nbsp;<a href="files/Instrukcja.pdf">INSTRUKCJA UŻYTKOWNIKA</a></li>
                         </ul>
                     </div>
                     <div class="d-inline-block col-6">
 
-                        <form class="generator-zgody" action="pdf.php" method="post">
-                                <div class="text-center">GENERATOR ZGODY</div>
-                                  <div class="form-group">
-                                    <label for="nazwa">Imię i nazwisko</label>
-                                    <input type="text" name="nazwa" class="form-control" id="nazwa">
+                        <form action="pdf.php" method="post" name="form" id="generator-zgody">
+				<div class="text-center">GENERATOR ZGODY</div>
+                                  <div class="form-inline">
+                                    <label for="nazwa">Imię i nazwisko&nbsp;</label>
+                                    <input type="text" name="nazwa" class="form-control align-middle" id="nazwa">
                                   </div>
-                                  <div class="form-group">
-                                    <label for="email">Email</label>
+                                  <div class="form-inline">
+                                    <label for="email">Email&nbsp;</label>
                                     <input type="email" name="email" class="form-control" id="email">
                                   </div>
-                                  <div class="form-group">
-                                    <label for="pesel">PESEL</label>
-                                    <input type="text" name="pesel" class="form-control" id="pesel" minlength="11" maxlength="11">
+                                  <div class="form-inline">
+                                      <label for="pesel">PESEL&nbsp;</label>
+                                      <input type="text" name="pesel" class="form-control" id="pesel" minlength="11" maxlength="11">
                                   </div>
-                                  <div class="form-group">
-                                    <label for="miejscowosc">Miejscowość (do&nbsp;wydruku)</label>
-                                    <input type="text" name="miejscowosc" class="form-control" id="miejscowosc">
+                                  <div class="form-inline">
+                                      <label for="miejscowosc">Miejscowość&nbsp;</label>
+                                      <input type="text" name="miejscowosc" class="form-control" id="miejscowosc">
                                   </div>
                                   <center><button type="submit" class="btn btn-default text-uppercase generator-button">Generuj wydruk</button></center>
-                                  <div class="generator-info">Zgody generowane są również bezpośrednio<br>w&nbsp;laboratorium/punkcie&nbsp;rejestracji.</div>
-                            </form>
+                                  <div id="generator-warning" class="generator-info"></div>
+                                  <div class="generator-info">Zgody generowane są również bezpośrednio<br>w&nbsp;laboratorium / punkcie&nbsp;rejestracji.</div>
+		</form>
 
                     </div>
                 </div>
@@ -206,6 +208,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/scripts.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCml8UtRg4wbkpXVBNi6kpt3S5Yy7q38A&callback=myMap"></script>
 </body>
