@@ -1,13 +1,15 @@
 // green bar under navigation menu
 
-$('ul.nav > li > a').mouseenter(function() {
+$('ul#desktop-menu > li > a').mouseenter(function() {
+    $(this).children('hr').css('display','block');
     $(this).children('hr').animate({
         width: '100%'
     });
 });
-$('ul.nav > li > a').mouseleave(function() {
+$('ul#desktop-menu > li > a').mouseleave(function() {
     $(this).children('hr').stop();
     $(this).children('hr').css('width', '0');
+    $(this).children('hr').css('display','none');
 });
 
 // sticky navigation menu during scrolling
@@ -144,4 +146,19 @@ $('#generator-zgody').submit(function() {
         $('#generator-warning').html(alert_text);
         return false;
     }
+});
+
+// mobile menu
+
+$( "#hamburger" ).click(function() {
+  $( "#mobile-menu" ).slideToggle( "slow", function() {
+  });
+});
+$( "#menu" ).click(function() {
+  $( "#mobile-menu" ).slideToggle( "slow", function() {
+  });
+});
+$( "#mobile-menu" ).click(function() {
+  $( "#mobile-menu" ).slideToggle( "slow", function() {
+  });
 });
