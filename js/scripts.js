@@ -12,6 +12,33 @@ $('ul#desktop-menu > li > a').mouseleave(function() {
     $(this).children('hr').css('display','none');
 });
 
+// buttons
+
+$('.btn-more').mouseenter(function() {
+    $(this).css('background-color','#5ab438');
+});
+$('.btn-more').mouseleave(function() {
+    $(this).css('background-color','#00adef');
+});
+
+$('.generator-button').mouseenter(function() {
+    $(this).css('background-color','#5ab438');
+    $(this).css('color','#ffffff');
+});
+$('.generator-button').mouseleave(function() {
+    $(this).css('background-color','buttonface');
+    $(this).css('color','gray');
+});
+
+// links
+
+$('ul.wyniki>li>a').mouseenter(function() {
+    $(this).css('text-decoration','underline');
+});
+$('ul.wyniki>li>a').mouseleave(function() {
+    $(this).css('text-decoration','none');
+});
+
 // sticky navigation menu during scrolling
 
 window.onscroll = function() {
@@ -130,7 +157,9 @@ function myMap() {
 
 // animate on scroll library
 
-AOS.init();
+AOS.init({
+    disable: window.innerWidth < 769
+});
 
 // form validation
 

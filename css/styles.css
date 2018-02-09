@@ -272,7 +272,12 @@ label {
 #mobile-menu>li {
     padding: 1rem;
 }
-#desktop-menu {
+.btn-more {
+    margin: 0 auto;
+    background-color: #00adef;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    cursor: pointer;
 }
 @media  only screen and (max-width: 768px) {
     div.nice-shape, .carousel-item > img {
